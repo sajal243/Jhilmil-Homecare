@@ -1,0 +1,39 @@
+.summary {
+    width: calc(100% - 250px);
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+h2, .searchFilter{
+    text-align: center;
+}
+
+.patients{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.searchFilter{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.searchDiv{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.filters{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
