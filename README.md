@@ -1,18 +1,98 @@
-# React + Vite
+# Jhilmil Homecare Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend dashboard built using **React** to manage patients and homecare services for a home healthcare provider.  
+The application allows viewing patient details, filtering records, browsing services, and booking homecare services through an interactive UI.
 
-Currently, two official plugins are available:
+## LIVE URL - https://jhilmil-homecare-3uhn3wclu-sajal243s-projects.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Project Setup
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Prerequisites
+- Node.js (v20 or  >= 22)
+- npm or yarn
 
-Note: This will impact Vite dev & build performances.
+### Steps to Run the Project
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sajal243/Jhilmil-Homecare.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Navigate to the project folder:
+   
+   cd my-react-app
+
+
+3. Install dependencies:
+
+  npm install
+
+
+4. Start the development server:
+
+  npm run dev
+
+  (If using Create React App, use npm start instead)
+  Open the app in your browser:
+  http://localhost:5173
+
+### ✨ Features Implemented
+#### 🧑‍⚕️ Patient Management
+
+1. Display patient cards with basic details
+2. View detailed patient information in a modal (React Portal)
+3. Filter patients by:
+4. Status (Active / Inactive)
+5. Type of Care
+6. Search patient by name
+7. Hospital-style UI with a blue theme
+
+#### 🏥 Services Management
+
+  List of healthcare services with:
+
+  1. Service ID
+  2. Name & description
+  3. Duration / visit frequency
+  4. Cost range
+  5. Service cards with Popular and Recommended tags
+
+#### 📝 Service Booking
+
+1. Interactive booking form inside a modal
+2. Controlled inputs with validation
+3. Stores booking data in localStorage
+4. Prevents invalid submissions
+
+#### 🎨 UI / UX
+
+1. Smooth modals with backdrop
+2. Accessible form inputs
+3. Consistent spacing & typography
+4. Reusable components
+
+#### 📌 Assumptions Made
+
+1. Backend APIs are not available, so:
+2. Patient and service data are static JSON
+3. Bookings are stored in browser localStorage
+4. Authentication and user roles are out of scope
+5. Focus is on UI clarity and interaction
+6. Dataset size is small to medium (no pagination)
+
+#### 🛠️ Tech Stack
+
+1. React
+2. JavaScript (ES6+)
+3. CSS
+4. React Portals
+5. Browser localStorage
+
+#### 📄 Future Improvements
+
+1. Backend integration
+2. Edit / cancel bookings
+3. Pagination & sorting
+4. Authentication & role-based access
+5. Notifications and service tracking
